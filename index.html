@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/mzl.ljwddsow.ico">
+    <title>cv</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+              </nav>
+            
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container main-container">
+            <section class="section profile-section" id="profile">
+                <h1 class="section-title main-title">
+                    Kate Lishynskaya
+                </h1>
+            </section>
+            <section class="section photo" id="photo">
+                <h2 class="img-h">My photo</h2>
+                <img src="assets/DSCF1903_c.jpg" alt="my_photo" width="200">
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="item-list">
+                    <li class="item-child">Minsk, Belarus (ready to relocate)</li>
+                    <li class="item-child">Email: <a href="tekalishoo@gmail.com" class="section-link">tekalishoo@gmail.com</a></li>
+                    <li class="item-child">LinkedIn: <a href="https://www.linkedin.com/in/ekaterina-lishynskaya-852376231/" class="section-link">Ekaterina Lishynskaya</a></li>
+                    <li class="item-child">GitHub: <a href="https://github.com/TekaLishoo" class="section-link">TekaLishoo</a></li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p class="p-summary">
+                    In process of profession changing. Passionate about coding. 
+                    Good at problem solving, critical thinking, communicative, 
+                    responsible, hardworking.
+                </p>
+            </section>
+            <section class="section" id="skills">
+                
+                <h2 class="section-title">Skills</h2>
+                <ul class="item-list">
+                    <li class="item-child">Python</li>
+                    <li class="item-child">Git</li>
+                    <li class="item-child">HTML</li>
+                    <li class="item-child">JS</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code example</h2>
+                <pre><code>
+ def most_money(students):
+     d ={}
+     for st in students:
+         d[st.name] = float(st.fives)*5 +  \
+         float(st.tens)*10 + float(st.twenties)*20
+        if list(d.values()).count(sorted(list(d.values()))[-1]) > 1:
+            return r'all'
+        else:
+            for k,v in d.items():
+                if v == sorted(list(d.values()))[-1]:
+                    return k
+                                </code></pre>
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-title">Courses</h2>
+                <ul class="item-list">
+                    <li class="item-child">Core python (2021)</li>
+                    <li class="item-child">Python in examples (2022)</li>
+                </ul>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">My projects</h2>
+                <p><a href="https://github.com/TekaLishoo/MLCourse_Forest_Cover" class="section-link">Forest Cover Type</a></p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>BSTU</p>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul class="item-list">
+                    <li class="item-child">English (B1)</li>
+                    <li class="item-child">Spanish (A2)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>© 2022 
+                <a href="https://github.com/TekaLishoo" class="nav-link">GitHub: TekaLishoo</a>
+            </div>
+            <a class="rs-im" href="https://rs.school/js/"></a>
+        </div>
+    </footer>
+</body>
+</html>
