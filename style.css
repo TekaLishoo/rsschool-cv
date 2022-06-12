@@ -17,6 +17,11 @@ body {
 }
 
 
+.img-h {
+  display: none;
+}
+
+
 .section {
   width: 50%;
 }
@@ -150,7 +155,7 @@ a:hover {
 .rs-im {
   width: 121px;
   height: 45px;
-  background-image: url("rs_school_js.svg");
+  background-image: url("assets/rs_school_js.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
