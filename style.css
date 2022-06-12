@@ -6,66 +6,81 @@ html {
     box-sizing: border-box;
   }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   }
 
 
-  .container {
-    max-width: 1440px;
-    margin: 0 auto;
+.section {
+  width: 50%;
+}
+
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
   }
 
 
-  .nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-  }
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color:bisque;
+  font-size: 20px;
+  transition: .3s;
+}
 
 
-  .nav-link {
-    padding: 0 20px;
-    line-height: 50px;
-    text-decoration: none;
-    color:bisque;
-    font-size: 20px;
-    transition: .3s;
-  }
+.nav {
+  background-color: rgb(23, 23, 32);
+  border-radius: 5px;
+}
 
 
-  .nav {
-      background-color: rgb(23, 23, 32);
-      border-radius: 5px;
-  }
+.nav-item a:hover {
+  color: #a33333;
+}
 
-
-  .nav-item a:hover {
-    color: #a33333;
-  }
-
-  .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   
-  .section {
-    width: 40%;
-  }
+}
+  
+.footer {
+  background-color: rgb(23, 23, 32);
+  border-radius: 5px;
+  margin: 0px 200px;
+}
 
-  .main-title::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -70px;
-    width: 140px;
-    height: 10px;
-    background-color: aqua;
-  }
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title {
+  margin-top: 15%;
+  margin-left: 10%;
+  font-size: 42px;
+}
+
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  margin-left: -70px;
+  width: 400px;
+  height: 10px;
+  background-color:bisque;
+}
 
   @media (max-width: 768px) {
     .section {
@@ -73,6 +88,46 @@ html {
     }
   }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+}
 
 
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 250px;
+  justify-content: space-around;
+}
 
+.photo {
+  padding-left: 200px;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+
+.contact-item::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 5px; 
+  border: 2px solid bisque;
+  border-radius: 5px;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.rs-im {
+  width: 121px;
+  height: 45px;
+  background-image: url("rs_school_js.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
