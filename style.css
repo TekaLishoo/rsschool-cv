@@ -10,7 +10,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  }
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
 
 
 .section {
@@ -36,14 +40,24 @@ body {
 }
 
 
-.nav {
-  background-color: rgb(23, 23, 32);
-  border-radius: 5px;
+.section-link {
+  text-decoration: none;
+  color:rgb(42, 42, 133);
+  font-size: 20px;
+  transition: .3s;
 }
 
 
-.nav-item a:hover {
-  color: #a33333;
+.nav {
+  background-color: rgb(76, 76, 100);
+  border-radius: 5px;
+  width: 80%;
+
+}
+
+
+a:hover {
+  color: #d30f0f;
 }
 
 .main {
@@ -54,32 +68,34 @@ body {
 }
   
 .footer {
-  background-color: rgb(23, 23, 32);
-  border-radius: 5px;
-  margin: 0px 200px;
+  display: flex;
+  justify-content: space-around;
 }
+
 
 .profile-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
+
+
 .main-title {
-  margin-top: 15%;
-  margin-left: 10%;
-  font-size: 42px;
+  font-size: 48px;
+  position: relative;
 }
 
 
 .main-title::after {
   content: "";
+  top: 100%;
   position: absolute;
-  top: 30%;
-  left: 25%;
-  margin-left: -70px;
-  width: 400px;
-  height: 10px;
-  background-color:bisque;
+  left: 2%;
+  margin-left: -5%;
+  width: 430px;
+  height: 5px;
+  background-color:rgb(76, 76, 100);
 }
 
   @media (max-width: 768px) {
@@ -97,27 +113,34 @@ body {
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 250px;
   justify-content: space-around;
+  width: 80%;
 }
 
 .photo {
-  padding-left: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.contact-list {
+.item-list {
   list-style: none;
 }
 
+.item-child {
+  position: relative;
+}
 
-.contact-item::before {
+.item-child::before {
   content: "";
-  top: 0px;
-  left: 0px;
+  position: absolute;
+  bottom: 20%;
+  left: -5%;
+  border: 3px solid bisque;
+  border-radius: 20px;
+  font-size: 8px;
   width: 10px;
-  height: 5px; 
-  border: 2px solid bisque;
-  border-radius: 5px;
+  height: 10px;
 }
 
 .skills-list {
@@ -130,4 +153,20 @@ body {
   background-image: url("rs_school_js.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(76, 76, 100);
+  border-radius: 5px;
+  width: 80%;
+  align-items: center;
+  padding: 1%;
+  color: bisque;
+}
+
+.a-git-link {
+  font-style: none;
 }
